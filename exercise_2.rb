@@ -11,8 +11,9 @@ def decode(ciphertext, key)
   plaintext_chars = ciphertext.chars.map do |char|
     cipher[65 - char.ord]
   end
-  plaintext_chars.join
+  puts plaintext_chars.join
 end
 
 
-encode("theswiftfoxjumpedoverthelazydog", "secretkey")
+encode("theswiftfoxjumpedoverthelazydog", "secretkey") # should output upcase gibberish
+decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey") # should output theswiftfoxjumpedoverthelazydog
