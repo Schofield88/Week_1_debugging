@@ -15,7 +15,7 @@ def decode(ciphertext, key)
   puts "E".ord
   puts plaintext_chars.join
 end
-print ""
+
 
 encode("theswiftfoxjumpedoverthelazydog", "secretkey") # should output upcase gibberish
 decode("EMBAXNKEKSYOVQTBJSWBDEMBPHZGJSL", "secretkey") # should output theswiftfoxjumpedoverthelazydog
