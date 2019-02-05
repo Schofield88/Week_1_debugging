@@ -13,3 +13,6 @@ def decode(ciphertext, key)
   end
   plaintext_chars.join
 end
+
+
+encode("theswiftfoxjumpedoverthelazydog", "secretkey")
